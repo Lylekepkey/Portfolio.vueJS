@@ -1,10 +1,16 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
   <router-view/>
+  <NavBar />
+  <HelloWorld />
 </template>
+
+<script>
+import NavBar from './components/NavBar.vue'
+import HelloWorld from './components/HelloWorld.vue'
+export default ({
+  components: { NavBar, HelloWorld }
+})
+</script>
 
 <style>
 #app {
