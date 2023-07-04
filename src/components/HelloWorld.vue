@@ -79,8 +79,6 @@ export default {
 .name {
   margin-right: 150px;
   padding: 0 60px;
-}
-.name {
   color: #000000;
   font: 400 30px "Inter", sans-serif;
 }
@@ -94,8 +92,6 @@ export default {
 .fixed-temp {
   box-sizing: border-box;
   padding: 10px;
-}
-.fixed-temp {
   background: #d9d9d9;
   border-radius: 68px;
   width: 605px;
@@ -107,8 +103,6 @@ export default {
 .next-text {
   padding: 10px;
   /* background-color: white; */
-}
-.next-text {
   color: #000000;
   text-align: center;
   font: 400 20px "Inter", sans-serif;
@@ -116,8 +110,6 @@ export default {
 
 .email {
   padding-top: 50px;
-}
-.email {
   color: #000000;
   text-align: center;
   font: 400 30px "Inter", sans-serif;
@@ -125,8 +117,6 @@ export default {
 
 .location {
   padding-top: 50px;
-}
-.location {
   color: #000000;
   text-align: center;
   font: 400 30px "Inter", sans-serif;
