@@ -1,5 +1,5 @@
 <template>
-     <header id="navbar1" class="navbar">
+     <header id="navbar1" class="navbar" v-on="navbar">
         <div class="wrapper">
             <div class="header">
                 <img class="logo" src="https://i.postimg.cc/YS5gfXsv/1683206946785-thumbnail.jpg">
@@ -16,21 +16,24 @@
 
 
 <script>
+export default {
+    methods: {
+        const navbar = document.querySelector(".navbar");
+        const onScroll = document.createElement("div");
 
-const navbar = document.querySelector(".navbar");
-const onScroll = document.createElement("div");
+
+        onScroll.setAttribute("data-scroll-watcher", "");
+
+        const navObserver = new IntersectionObserver((entries) => {
+            navbar.classList.toggle("sticking", !entries[0].isIntersecting);
+            },
+            {rootMargin: "50px 0px 0px 0px"}
+        );
 
 
-onScroll.setAttribute("data-scroll-watcher", "");
-
-const navObserver = new IntersectionObserver((entries) => {
-    navbar.classList.toggle("sticking", !entries[0].isIntersecting);
-    },
-    {rootMargin: "50px 0px 0px 0px"}
-);
-
-navObserver.observe(onScroll); 
-
+        navObserver.observe(onScroll); 
+    }
+}
 </script>
 
 <style scoped>
