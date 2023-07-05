@@ -48,8 +48,9 @@ export default {
     background-color: var(--_bg);
     position: sticky;
     top:0;
+    padding-top: 40px;
 }
-.navbar,
+
 .navbar * {
     transition: 500ms;
 }
@@ -90,5 +91,18 @@ export default {
     width: min(65rem , 100% - 2rem);
     margin-inline: auto;
 }
+
+@media only screen and (max-width: 605px) {
+    .navbar {
+        width: 700px;
+    }
+}
+@media (min-width: 700px) and (max-width: 919px)  {
+    .navbar {
+        width: 920px;
+    }
+}
+
+
 
 </style>

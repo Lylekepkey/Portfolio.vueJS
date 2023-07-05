@@ -40,10 +40,12 @@
         </p>
       </div>
       <div class="proj">
-        <p>
-          <a href="#">Projects completed and
-           in the process of being completed</a>
-        </p>
+        <div class="proj-inner">
+          <p>
+            <a href="#">Projects completed and
+            in the process of being completed</a>
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -52,9 +54,6 @@
 <script>
 export default {
   name: 'HelloWorld',
-  props: {
-    msg: String
-  }
 }
 
 
@@ -96,6 +95,7 @@ export default {
   border-radius: 68px;
   width: 605px;
   height: 800px;
+  margin-left: 50px;
 }
 
 
@@ -129,6 +129,7 @@ export default {
   border-radius: 68px;
   width: 605px;
   height: 600px;
+  margin-right: 50px;
 }
 
 .text2{
@@ -142,22 +143,65 @@ export default {
   font: 400 30px "Inter", sans-serif;
 }
 .proj {
+  margin: 0px 0px 0px 130px;
   text-align: center;
   font: 400 30px "Inter", sans-serif;
-  width: 300px;
+  width: 320px;
+  /* background-color: black; */
 }
 
 
-@media only screen and (max-width: 700px) {
-  .container{
-    display: grid;
+@media (min-width: 315px) and (max-width: 605px) {
+  .container {
+    display:grid;
     gap: 1rem;
-    height: 100vh;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "fixed-temp"
     "lil-description"
     ;
+  }
+  .lil-description{
+    margin-left:50px;
+  }
+}
+
+@media (min-width:606px) and (max-width: 700px) {
+  .container{
+    display: grid;
+    gap: 1rem;
+    /* height: 120vh; */
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "fixed-temp"
+    "lil-description"
+    ;
+    justify-content: center;
+  }
+
+  .fixed-temp{
+    margin: 0;
+  }
+
+  .lil-description{
+    margin: 0;
+  }
+}
+
+@media (min-width:701px ) and (max-width: 1310px) {
+  .container{
+    display: grid;
+    gap:1rem;
+  grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "fixed-temp"
+    "lil-description"
+    ;
+    justify-content: center;
+    margin-left: 150px;
+  }
+  .lil-description {
+    margin-left: 50px;
   }
 }
 
