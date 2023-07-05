@@ -166,7 +166,7 @@ export default {
   }
 }
 
-@media (min-width:606px) and (max-width: 700px) {
+@media (min-width:605px) and (max-width: 700px) {
   .container{
     display: grid;
     gap: 1rem;
@@ -188,7 +188,7 @@ export default {
   }
 }
 
-@media (min-width:701px ) and (max-width: 1310px) {
+@media (min-width:700px ) and (max-width: 1310px) {
   .container{
     display: grid;
     gap:1rem;
