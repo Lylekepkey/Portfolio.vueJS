@@ -17,21 +17,23 @@
 
 <script>
 export default {
-    methods: {
-        const navbar = document.querySelector(".navbar");
-        const onScroll = document.createElement("div");
+    methods : {
+            show: function() {
+            const navbar = document.querySelector(".navbar");
+            const onScroll = document.createElement("div");
 
 
-        onScroll.setAttribute("data-scroll-watcher", "");
+            onScroll:setAttribute("data-scroll-watcher", "");
 
-        const navObserver = new IntersectionObserver((entries) => {
-            navbar.classList.toggle("sticking", !entries[0].isIntersecting);
-            },
-            {rootMargin: "50px 0px 0px 0px"}
-        );
+            const navObserver = new IntersectionObserver((entries) => {
+                navbar.classList.toggle("sticking", !entries[0].isIntersecting);
+                },
+                {rootMargin: "50px 0px 0px 0px"}
+            );
 
 
-        navObserver.observe(onScroll); 
+            navObserver.observe(onScroll); 
+        }
     }
 }
 </script>
