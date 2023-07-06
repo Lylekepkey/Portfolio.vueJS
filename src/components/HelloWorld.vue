@@ -30,8 +30,8 @@
         I'm Lyle an aspiring Front-end developer. <br>
         Right now I am in a love hate relationship with
         vue.js. Why you may ask? It's because vue isn't
-        something I see myself using in the future😐 and I mean that 
-        in everyway
+        something I see myself using in the future  and I mean that 
+        in everyway😐
         </p>
       </div>
       <div class="exp">
@@ -143,6 +143,7 @@ export default {
   font: 400 30px "Inter", sans-serif;
 }
 .proj {
+  padding-top: 20px;
   margin: 0px 0px 0px 130px;
   text-align: center;
   font: 400 30px "Inter", sans-serif;
