@@ -192,7 +192,7 @@ export default {
   .container{
     display: grid;
     gap:1rem;
-  grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "fixed-temp"
     "lil-description"
