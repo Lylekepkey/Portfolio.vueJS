@@ -22,6 +22,9 @@
       <div class="location">
         Cape Town, South Africa
       </div>
+      <div class="location">
+        <a href="/src/assets/CV Of Lyle Kepkey.pdf" download="PDF">Download CV</a>
+      </div>
     </div>
 
     <div class="lil-description">
@@ -54,8 +57,11 @@
 <script>
 export default {
   name: 'HelloWorld',
-}
+};
 
+function downloadFile() {
+  window.open()
+}
 
 </script>
 
