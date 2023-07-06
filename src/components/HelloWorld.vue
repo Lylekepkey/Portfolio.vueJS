@@ -17,7 +17,7 @@
 
 
       <div class="email">
-        <a @click="scrollMeTo(contact)" >lylekepkey@gmail.com</a>
+        <a href="#footer" >lylekepkey@gmail.com</a>
       </div>
       <div class="location">
         Cape Town, South Africa
@@ -61,6 +61,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+a{
+  text-decoration: none;
+  color: #b47ab4;
+}
 .container {
   display: flex;
   justify-content: space-between;
@@ -177,6 +181,7 @@ export default {
     "lil-description"
     ;
     justify-content: center;
+    max-width: 120vh;
   }
 
   .fixed-temp{
@@ -199,6 +204,7 @@ export default {
     ;
     justify-content: center;
     margin-left: 150px;
+    max-width: 150vh;
   }
   .lil-description {
     margin-left: 50px;

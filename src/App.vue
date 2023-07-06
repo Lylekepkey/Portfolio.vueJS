@@ -2,13 +2,15 @@
   <router-view/>
   <NavBar />
   <HelloWorld />
+  <Footer />
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue'
 import HelloWorld from './components/HelloWorld.vue'
+import Footer from './components/Footer.vue'
 export default ({
-  components: { NavBar, HelloWorld }
+  components: { NavBar, HelloWorld, Footer, }
 })
 </script>
 
@@ -27,6 +29,7 @@ export default ({
 }
 body {
   background-color: #B1DDF1;
+  /* overflow-x: hidden; */
 }
 
 </style>
