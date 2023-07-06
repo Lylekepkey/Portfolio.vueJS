@@ -171,7 +171,6 @@ export default {
   .container{
     display: grid;
     gap: 1rem;
-    /* height: 120vh; */
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "fixed-temp"

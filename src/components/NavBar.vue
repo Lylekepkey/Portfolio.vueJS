@@ -35,9 +35,9 @@
   
   <style>
   .navbar {
-      --_bg: grey;
+      --_bg: #d9d9d9;
       --_logo-width: 90px;
-      --_nav-link-color: lightgrey;
+      --_nav-link-color: black;
       
       padding: 1rem;
       background-color: var(--_bg);
