@@ -3,6 +3,9 @@
   <router-view/>
   <HelloWorld />
   <About />
+  <Contact/>
+<WorkDu/>
+
   <Footer />
 </template>
 
@@ -10,9 +13,11 @@
 import NavBar from './components/NavBar.vue'
 import HelloWorld from './components/HelloWorld.vue'
 import About from './components/About.vue'
+import Contact from './components/Contact.vue'
+import WorkDu from './components/Work&edu.vue'
 import Footer from './components/Footer.vue'
 export default ({
-  components: { NavBar, HelloWorld, About, Footer, }
+  components: { NavBar, HelloWorld, About, Contact, WorkDu, Footer, }
 })
 </script>
 
