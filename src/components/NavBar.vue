@@ -93,14 +93,29 @@ export default {
   margin-top: 20px;
 }
 
+@media (min-width: 315px) and (max-width: 350px) {
+    .navbar {
+        width: 745px !important;
+    }
+}
+@media (min-width: 350px) and (max-width: 400px) {
+    .navbar {
+        width: 747px !important;
+    }
+}
 @media (min-width: 400px) and (max-width: 450px) {
     .navbar {
         width: 750px !important;
     }
 }
-@media (min-width: 450;) and (max-width: 605px) {
+@media (min-width: 450px) and (max-width: 531px) {
     .navbar {
-        width: 900px !important;
+        width: 777px;
+    }
+}
+@media (min-width: 531px) and (max-width: 605px) {
+    .navbar {
+        width: 815px;
     }
 }
 @media (min-width: 700px) and (max-width: 919px)  {

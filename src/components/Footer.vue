@@ -57,5 +57,15 @@ footer {
         width: 745px;
     }
 }
+@media (min-width: 700px) and (max-width:900px) {
+    footer {
+        width:950px;
+    }
+}
+@media (min-width: 900px) and (max-width:920px) {
+    footer {
+        width:950px;
+    }
+}
 
 </style>
