@@ -1,9 +1,9 @@
 <template>
-  <router-view/>
   <NavBar />
+  <router-view/>
   <HelloWorld />
-  <Footer />
   <About />
+  <Footer />
 </template>
 
 <script>
@@ -12,7 +12,7 @@ import HelloWorld from './components/HelloWorld.vue'
 import About from './components/About.vue'
 import Footer from './components/Footer.vue'
 export default ({
-  components: { NavBar, HelloWorld, Footer, }
+  components: { NavBar, HelloWorld, About, Footer, }
 })
 </script>
 

@@ -93,14 +93,19 @@ export default {
   margin-top: 20px;
 }
 
-@media only screen and (max-width: 605px) {
+@media (min-width: 400px) and (max-width: 450px) {
     .navbar {
-        width: 700px;
+        width: 750px !important;
+    }
+}
+@media (min-width: 450;) and (max-width: 605px) {
+    .navbar {
+        width: 900px !important;
     }
 }
 @media (min-width: 700px) and (max-width: 919px)  {
     .navbar {
-        width: 920px;
+        width: 950px;
     }
 }
 </style>

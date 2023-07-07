@@ -42,4 +42,20 @@ footer {
     font-size: smaller;
 }
 
+@media (min-width: 315px) and (max-width: 400px) {
+    footer {
+        width: 745px;
+    }
+}
+@media (min-width: 400px) and (max-width: 500px) {
+    footer {
+        width: 745px;
+    }
+}
+@media (min-width: 500px) and (max-width: 606px) {
+    footer {
+        width: 745px;
+    }
+}
+
 </style>

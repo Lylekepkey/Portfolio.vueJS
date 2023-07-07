@@ -23,7 +23,7 @@
         Cape Town, South Africa
       </div>
       <div class="location">
-        <a href="/src/assets/CV Of Lyle Kepkey.pdf" target="_blank" download="PDF">Download CV</a>
+        <a href="" target="_blank" download="Lyle Kepkey.pdf">Download CV</a>
       </div>
     </div>
 
@@ -173,7 +173,8 @@ a{
     ;
   }
   .lil-description{
-    margin-left:50px;
+    margin-left:46px;
+    margin-top: 50px;
   }
 }
 
@@ -196,6 +197,7 @@ a{
 
   .lil-description{
     margin: 0;
+    margin-top: 50px;
   }
 }
 
@@ -213,7 +215,7 @@ a{
     max-width: 150vh;
   }
   .lil-description {
-    margin-left: 50px;
+    margin-left: 46px;
   }
 }
 
