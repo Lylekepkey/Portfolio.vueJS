@@ -5,8 +5,8 @@
         <img class="logo" src="https://i.postimg.cc/YS5gfXsv/1683206946785-thumbnail.jpg">
         <div class="text">
           <ul class="nav-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="./About.vue">About</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Resume</a></li>
           </ul>

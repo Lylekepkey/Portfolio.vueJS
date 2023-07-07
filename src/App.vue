@@ -3,11 +3,13 @@
   <NavBar />
   <HelloWorld />
   <Footer />
+  <About />
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue'
 import HelloWorld from './components/HelloWorld.vue'
+import About from './components/About.vue'
 import Footer from './components/Footer.vue'
 export default ({
   components: { NavBar, HelloWorld, Footer, }
