@@ -23,7 +23,7 @@
         Cape Town, South Africa
       </div>
       <div class="location">
-        <a href="/src/assets/CV Of Lyle Kepkey.pdf" download="PDF">Download CV</a>
+        <a href="/src/assets/CV Of Lyle Kepkey.pdf" target="_blank" download="PDF">Download CV</a>
       </div>
     </div>
 
