@@ -22,7 +22,7 @@
                                   really well alone as well.</p>
                               </div>
                           </div>
-      
+                        
                           <div class="card-1">
                               <div class="card-border-1"></div>
                               <div class="card-content-1">
@@ -108,7 +108,6 @@
   background: #d9d9d9;
   border-radius: 68px;
   width: 605px;
-  height: 190vh;
   margin-right: 50px;
   margin-top: 20px;
 
@@ -130,33 +129,37 @@
     margin-top: 20px;
 }
 .cards-container-1 {
-    background-color: black;
+    /* background-color: black; */
     display: flex;
-    height: 600vh;
+    height: 100%;
     justify-content: center;
     /* margin-left: 50px;
     margin-right: 90px;
     padding-top: 100px; */
     /* overflow: hidden; */
+    align-items: center;
 }
 #cards1 {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     max-width: 926px;
-    /* width: calc(100% - 20px); */
+    width: 100%;
+    justify-content: center;
 }
 
 .card-1 {
     background-color: rgb(255, 255, 255, 0.1);
     border-radius: 10px;
-    color: rgb(204, 204, 255);
+    /* color: rgb(204, 204, 255); */
     height: 570px;
     width: 300px;
+    margin: 8px;
 }
 .card-content-1 {
     padding-top: 10px;
     text-align: center;
+    /* background-color: black; */
 }
 .card-content-1 img {
     width: 170px;

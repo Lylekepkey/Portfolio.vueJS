@@ -30,6 +30,7 @@ img {
 }
 footer {
     background-color: #cee8f4;
+    bottom: 0;
     margin-top: 50px;
     padding-top: 40px;
     padding-bottom: 20px;

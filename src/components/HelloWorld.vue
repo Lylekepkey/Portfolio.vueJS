@@ -4,7 +4,7 @@
     <div class="fixed-temp">
 
         <!-- Top nav -->
-        <div class="top-fixed-text">
+      <div class="top-fixed-text">
           <div class="name">
             <h1>Lyle</h1>
           </div>
