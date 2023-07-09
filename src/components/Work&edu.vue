@@ -51,6 +51,7 @@ export default {
 .container {
   display: flex;
   justify-content: end;
+  align-items: center;
   margin-top: 50px;
 }
 .contain {
@@ -59,6 +60,9 @@ export default {
   width: 605px;
   height: 600px;
   margin-right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -78,7 +82,7 @@ export default {
 }
 #cards {
     display: flex;
-    justtify-content: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 8px;
     max-width: 500px;

@@ -11,7 +11,7 @@
           <div class="next-text">
             <p>Front-end <br> Web Developer</p>
           </div>
-        </div>
+      </div>
 
       <img class="image" src="https://i.postimg.cc/zvLRNh8n/C12-C2-Lyle-Kepky-1.jpg" />
 
