@@ -1,8 +1,8 @@
 <template>
-    <div class="container">
+    <div class="container" id="exp">
         <div class="contain">
             <div id="cards">
-                <div class="card">
+                <div class="card card1">
                     <div class="card-border"></div>
                     <div class="card-content">
                         <h3>Work</h3>
@@ -14,7 +14,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card card2">
                     <div class="card-border"></div>
                     <div class="card-content">
                         <h3>Education</h3>
@@ -51,6 +51,7 @@ export default {
 .container {
   display: flex;
   justify-content: end;
+  margin-top: 50px;
 }
 .contain {
   background: #d9d9d9;
@@ -77,10 +78,12 @@ export default {
 }
 #cards {
     display: flex;
+    justtify-content: center;
     flex-wrap: wrap;
     gap: 8px;
-    max-width: 926px;
+    max-width: 500px;
     width: calc(100% - 20px);
+    /* background-color: black; */
 }
 
 #cards:hover > .card > .card-border {
@@ -92,7 +95,6 @@ export default {
     border-radius: 10px;
     color: rgb(204, 204, 255);
     height: 260px;
-    /* position: relative; */
     width: 300px;
     
 }
@@ -136,7 +138,6 @@ export default {
     border-radius: inherit;
     height: calc(100% - 2px);
     margin: 1px;
-    /* position: relative; */
     width: calc(100% - 2px);
     z-index: 2;
 }

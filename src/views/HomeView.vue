@@ -11,13 +11,13 @@ import NavBar from '@/components/NavBar.vue';
 import Footer from '@/components/Footer.vue';
 
 export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
-  },
   name: 'NavBar',
   components: {
     NavBar
+  },
+  name: 'HomeView',
+  components: {
+    HelloWorld
   },
   name: 'Footer',
   components: {

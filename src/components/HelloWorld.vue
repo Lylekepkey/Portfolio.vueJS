@@ -39,7 +39,7 @@
       </div>
       <div class="exp">
         <p>
-          <a href="#">Experience</a>
+          <a href="exp">Experience</a>
         </p>
       </div>
       <div class="proj">
@@ -99,13 +99,13 @@ a{
   height: 400px;
 }
 .fixed-temp {
-  box-sizing: border-box;
   padding: 10px;
   background: #d9d9d9;
   border-radius: 68px;
   width: 605px;
   height: 800px;
   margin-left: 50px;
+  margin-top: 20px;
 }
 
 

@@ -4,7 +4,8 @@
   <HelloWorld />
   <About />
   <Contact/>
-<WorkDu/>
+  <WorkDu/>
+  <Testimonial />
 
   <Footer />
 </template>
@@ -16,8 +17,9 @@ import About from './components/About.vue'
 import Contact from './components/Contact.vue'
 import WorkDu from './components/Work&edu.vue'
 import Footer from './components/Footer.vue'
+import Testimonial from './components/Testimonial.vue'
 export default ({
-  components: { NavBar, HelloWorld, About, Contact, WorkDu, Footer, }
+  components: { NavBar, HelloWorld, About, Contact, WorkDu, Testimonial, Footer, }
 })
 </script>
 
