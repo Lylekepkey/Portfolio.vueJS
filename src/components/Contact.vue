@@ -17,7 +17,7 @@
 </template>
 <script>
 export default {
-    name: 'Form',
+    name: 'Contact',
 }
 </script>
 

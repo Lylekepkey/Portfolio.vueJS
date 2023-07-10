@@ -30,9 +30,8 @@ img {
 }
 footer {
     background-color: #cee8f4;
-    bottom: 0;
     margin-top: 50px;
-    padding-top: 40px;
+    padding-top: 10px;
     padding-bottom: 20px;
 }
 .container{
