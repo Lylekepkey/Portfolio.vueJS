@@ -3,9 +3,9 @@
   <router-view/>
   <HelloWorld />
   <About />
-  <Contact/>
   <WorkDu/>
   <Testimonial />
+  <Contact/>
 
   <Footer />
 </template>
