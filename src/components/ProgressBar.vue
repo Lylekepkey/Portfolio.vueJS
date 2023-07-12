@@ -1,24 +1,68 @@
 <template>
-    <div class="container">
+    <div class="container-1">
         <div class="lil-description">
-            <div class="bar">
-                <div class="outer">
-                    <div class="inner">
-                        <div  id="num">
-                            65%
+            <div class=container>
+                <div class="card">
+                    <div class="percent" style="--clr:#04fc43;--num:85">
+                        <div class=dot></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>
+                                85<span>%</span>
+                            </h2>
+                            <p>HTML</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="percent" style="--clr:#04fc43;--num:60">
+                        <div class=dot></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>
+                                60<span>%</span>
+                            </h2>
+                            <p>JavaScript</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="percent" style="--clr:#04fc43;--num:11">
+                        <div class=dot></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>
+                                11<span>%</span>
+                            </h2>
+                            <p>MySQL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="percent" style="--clr:#04fc43;--num:61">
+                        <div class=dot></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>
+                                61<span>%</span>
+                            </h2>
+                            <p>Python</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                <defs>
-                    <linearGradient id="GradientColor">
-                    <stop offset="0%" stop-color="#e91e63" />
-                    <stop offset="100%" stop-color="#673ab7" />
-                    </linearGradient>
-                </defs>
-                <circle cx="80" cy="80" r="70" stroke-linecap="round" />
-            </svg>
         </div>
     </div>
 </template>
@@ -29,11 +73,10 @@
 </script>
 
 <style scoped>
-.container {
+.container-1 {
   display: flex;
   justify-content: end;
 }
-/* right */
 .lil-description {
   background: #d9d9d9;
   border-radius: 68px;
@@ -42,49 +85,126 @@
   margin-right: 50px;
 }
 
-.bar {
-    width: 160px;
-    height: 160px;
-    /* background: blue; */
-}
-.outer {
-    height: 160px;
-    width: 160px;
-    border-radius: 50%;
-    padding: 15px;
-    box-shadow: 5px 5px 10px -1px rgba(0, 0, 0, 0.30),
-                -5px -5px 10px -1px rgba(0, 0, 0, 0.7)
-    ;
-}
-.inner {
+
+.container{
+    position: relative;
     display: flex;
-    align-items: center;
+    flex-wrap:wrap;
+    gap:20px;
     justify-content: center;
-    height: 130px;
-    width: 130px;
+    align-items: center;
+}
+
+.container .card {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    border-radius: 10px;
+    position:relative;
+    width: 220px;
+    height: 220px;
+    background-color: #c3c3c3;
+}
+
+.container .card .percent {
+    position: relative;
+    margin-top: 30px;
+    width: 150px;
+    height: 150px;
+}
+.container .card .percent svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
+}
+.container .card .percent svg circle {
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width: 2;
+    stroke: #191919;
+    transform: translate(5px, 5px);
+}
+.container .card .percent svg circle:nth-child(2) {
+    stroke: var(--clr);
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+    opacity: 0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 2.5s;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* dot */
+.dot {
+    position: absolute;
+    inset: 5px;
+    z-index: 10;
+    animation: animateDot 2s linear forwards; 
+}
+
+@keyframes animateDot {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(calc(3.6deg * var(--num)));
+    }
+}
+
+.dot::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
-    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0.2),
-                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
-                0.5px 0.5px 0px rgba(0, 0,0,0.15),
-                0px 12px 0px -10px rgba(0,0,0,0.06)
-                ;
+    background: var(--clr);
+
+    box-shadow: 0 0 10px var(--clr),
+    0 0 30px var(--clr);
 }
-#num {
-    font-weight: 600;
-    color: red;
+/* dot end */
+
+.number{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 2.5s;
 }
-circle{
-    fill: none;
-    stroke: url(#GradientColor);
-    stroke-width: 15px;
-    stroke-dasharray: 471;
-    stroke-dashoffset: 0;
+.number h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+    font-size: 2.5em;
 }
-svg {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
+.number h2 span {
+    font-weight: 300;
+    font-size: 0.5em;
 }
+.number p {
+    font-weight: 300;
+    font-size: 0.75em;
+    margin-top: 5px;
+    color: rgba(255,255,255,0.75);
+    letter-spacing: 2px;
+}
+
 
 </style>
