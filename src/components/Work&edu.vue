@@ -149,4 +149,79 @@ export default {
     text-align: center;
 }
 
+@media (min-width: 315px) and (max-width: 355px) {
+  .container {
+    display:grid;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "contain"
+    ;
+    justify-content: center;
+    margin-left: 350px;
+  }
+  .contain{
+    margin-left:46px;
+  }
+}
+@media (min-width: 355px) and (max-width: 450px) {
+  .container {
+    display:grid;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "contain"
+    ;
+    justify-content: center;
+    margin-left: 330px;
+  }
+  .contain{
+    margin-left:40px;
+  }
+}
+@media (min-width: 450px) and (max-width: 605px) {
+  .container {
+    display:grid;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "contain"
+    ;
+    justify-content: center;
+    margin-left: 330px;
+  }
+  .contain{
+    margin-left:40px;
+  }
+}
+@media (min-width:605px) and (max-width: 700px) {
+  .container{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "contain"
+    ;
+    justify-content: center;
+    max-width: 120vh;
+  }
+
+  .contain{
+    margin: 0;
+  }
+}
+
+@media (min-width:700px ) and (max-width: 1310px) {
+  .container{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "contain"
+    ;
+    justify-content: center;
+    margin-left: 150px;
+    max-width: 150vh;
+  }
+  .contain {
+    margin-left: 46px;
+  }
+}
+
+
 </style>

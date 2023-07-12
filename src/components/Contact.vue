@@ -88,12 +88,12 @@ textarea {
     display:grid;
     grid-template-rows: 1fr;
     grid-template-areas:
-    "lil-description"
+    "right"
     ;
     justify-content: center;
     margin-left: 350px;
   }
-  .lil-description{
+  .right{
     margin-left:46px;
   }
 }
@@ -102,12 +102,12 @@ textarea {
     display:grid;
     grid-template-rows: 1fr;
     grid-template-areas:
-    "lil-description"
+    "right"
     ;
     justify-content: center;
     margin-left: 330px;
   }
-  .lil-description{
+  .right{
     margin-left:40px;
   }
 }
@@ -116,12 +116,12 @@ textarea {
     display:grid;
     grid-template-rows: 1fr;
     grid-template-areas:
-    "lil-description"
+    "right"
     ;
     justify-content: center;
     margin-left: 330px;
   }
-  .lil-description{
+  .right{
     margin-left:40px;
   }
 }
@@ -130,13 +130,13 @@ textarea {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-areas:
-    "lil-description"
+    "right"
     ;
     justify-content: center;
     max-width: 120vh;
   }
 
-  .lil-description{
+  .right{
     margin: 0;
   }
 }
@@ -146,13 +146,13 @@ textarea {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-areas:
-    "lil-description"
+    "right"
     ;
     justify-content: center;
     margin-left: 150px;
     max-width: 150vh;
   }
-  .lil-description {
+  .right {
     margin-left: 46px;
   }
 }

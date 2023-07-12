@@ -207,4 +207,78 @@
 }
 
 
+@media (min-width: 315px) and (max-width: 355px) {
+  .container-1 {
+    display:grid;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "lil-description"
+    ;
+    justify-content: center;
+    margin-left: 350px;
+  }
+  .lil-description{
+    margin-left:46px;
+  }
+}
+@media (min-width: 355px) and (max-width: 450px) {
+  .container-1 {
+    display:grid;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "lil-description"
+    ;
+    justify-content: center;
+    margin-left: 330px;
+  }
+  .lil-description{
+    margin-left:40px;
+  }
+}
+@media (min-width: 450px) and (max-width: 605px) {
+  .container-1 {
+    display:grid;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "lil-description"
+    ;
+    justify-content: center;
+    margin-left: 330px;
+  }
+  .lil-description{
+    margin-left:40px;
+  }
+}
+@media (min-width:605px) and (max-width: 700px) {
+  .container-1{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "lil-description"
+    ;
+    justify-content: center;
+    max-width: 120vh;
+  }
+
+  .lil-description{
+    margin: 0;
+  }
+}
+
+@media (min-width:700px ) and (max-width: 1310px) {
+  .container-1{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "lil-description"
+    ;
+    justify-content: center;
+    margin-left: 150px;
+    max-width: 150vh;
+  }
+  .lil-description {
+    margin-left: 46px;
+  }
+}
+
 </style>
