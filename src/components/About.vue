@@ -7,7 +7,7 @@
                     <h1>About Me.</h1>
                     <p>Web Designer</p>
                     <p class="">Hi! I'm <span class="bold">Lyle Kepkey</span>,
-                        an aspired Front-end developer.I doesn't like bootstrap, if you
+                        an aspired Front-end developer.Who doesn't like bootstrap, if you
                         have a problem with that fight me. I'm 5'8 but I feel like I am 6' tall.
                     </p>
                 </div>
