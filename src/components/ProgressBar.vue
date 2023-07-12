@@ -13,7 +13,7 @@
                             <h2>
                                 85<span>%</span>
                             </h2>
-                            <p>HTML</p>
+                            <p>HTML & CSS</p>
                         </div>
                     </div>
                 </div>
@@ -68,7 +68,9 @@
 </template>
 
 <script>
-
+export default {
+        name: 'Progressbar',
+    }
 
 </script>
 
