@@ -1,14 +1,14 @@
 <template>
-    <div class="container">
+    <div class="container" id="ABOUT">
         <div></div>
         <div class="right">
             <div class="lil-description">
                 <div class="text2">
                     <h1>About Me.</h1>
                     <p>Web Designer</p>
-                    <p class="">Hi! I'm <span class="bold">Lyle Kepkey</span>,
-                        an aspired Front-end developer.Who doesn't like bootstrap, if you
-                        have a problem with that fight me. I'm 5'8 but I feel like I am 6' tall.
+                    <p class="">I'm an enthusiastic and adaptable individual with a passion for embracing new challenges.
+                       I enjoy learning and believe in the power of collaboration to create meaningful experiences and 
+                       positive change.
                     </p>
                 </div>
             </div>
@@ -25,6 +25,7 @@ export default {
 .container {
   display: flex;
   justify-content: end;
+  margin-top: 50px;
 }
 /* right */
 .lil-description {

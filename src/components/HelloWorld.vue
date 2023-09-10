@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
+  <div class="container" id="HOME">
     <!-- Left cont -->
-    <div class="fixed-temp">
+    <div :class="['fixed-temp', { sticking: isSticky }]">
 
         <!-- Top nav -->
       <div class="top-fixed-text">
@@ -31,10 +31,8 @@
       <div class="text2">  
         <p>Hello There! <br>
         I'm Lyle an aspiring Front-end developer. <br>
-        Right now I am in a love hate relationship with
-        vue.js. Why you may ask? It's because vue isn't
-        something I see myself using in the future  and I mean that 
-        in everyway😐
+        I'm a curious and creative problem-solver, always eager to 
+        learn and grow. I value collaboration and strive to make a positive impact.
         </p>
       </div>
       <div class="exp">
@@ -61,7 +59,8 @@ export default {
 
 function downloadFile() {
   window.open()
-}
+};
+
 
 </script>
 
@@ -95,15 +94,16 @@ a{
 /* Image */
 .image {
   border-radius: 68px;
-  width: 267px;
-  height: 400px;
+  width: 237px;
+  height: 350px;
 }
 .fixed-temp {
+  position: sticky;
   padding: 10px;
   background: #d9d9d9;
   border-radius: 68px;
   width: 605px;
-  height: 800px;
+  height: 600px;
   margin-left: 50px;
   margin-top: 20px;
 }
@@ -111,7 +111,7 @@ a{
 
 /* Text-next to name */
 .next-text {
-  padding: 10px;
+  padding:10px;
   /* background-color: white; */
   color: #000000;
   text-align: center;
@@ -119,14 +119,14 @@ a{
 }
 
 .email {
-  padding-top: 50px;
+  padding-top: 10px;
   color: #000000;
   text-align: center;
   font: 400 30px "Inter", sans-serif;
 }
 
 .location {
-  padding-top: 50px;
+  padding-top: 10px;
   color: #000000;
   text-align: center;
   font: 400 30px "Inter", sans-serif;
@@ -138,6 +138,7 @@ a{
   background: #d9d9d9;
   border-radius: 68px;
   width: 605px;
+  margin-top: 20px;
   height: 600px;
   margin-right: 50px;
 }

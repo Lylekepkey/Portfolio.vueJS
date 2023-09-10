@@ -24,12 +24,13 @@
 
 <style scoped>
 img {
- height: 80px;
+ height: 40px;
  aspect-ratio: 5/4;
  object-fit: contain;
+ margin-top: 10px;
 }
 footer {
-    background-color: #cee8f4;
+    background-color: #d9d9d9;
     margin-top: 50px;
     padding-top: 10px;
     padding-bottom: 20px;

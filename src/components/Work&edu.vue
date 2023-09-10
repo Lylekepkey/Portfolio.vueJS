@@ -145,8 +145,10 @@ export default {
     margin: 1px;
     width: calc(100% - 2px);
     z-index: 2;
-}
-.card-content {
+  }
+  .card-content {
+    /* margin-top: auto;
+    margin-bottom: auto; */
     text-align: center;
 }
 
