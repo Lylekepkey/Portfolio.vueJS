@@ -10,8 +10,14 @@
             <iframe src="https://fastidious-liger-75b1bb.netlify.app" />
             <a href="https://extreme-age-gap.netlify.app" target="_blank"><p>Class project</p></a>
             <iframe src="https://extreme-age-gap.netlify.app" />
-            <a href="" target="_blank"><p></p></a>
-            <a href="" target="_blank"><p></p></a>
+            <a href="https://ubiquitous-empanada-5d35ea.netlify.app/" target="_blank"><p>To Do List</p></a>
+            <iframe src="https://ubiquitous-empanada-5d35ea.netlify.app/" />
+            <a href="https://tangerine-jalebi-4f740d.netlify.app/" target="_blank"><p>Calculator</p></a>
+            <iframe src="https://tangerine-jalebi-4f740d.netlify.app/" />
+            <a href="https://starlit-peony-428281.netlify.app/" target="_blank"><p>Temperature converter</p></a>
+            <iframe src="https://starlit-peony-428281.netlify.app/" />
+            <a href="https://fascinating-profiterole-75d2d2.netlify.app/" target="_blank"><p>BMI converter</p></a>
+            <iframe src="https://fascinating-profiterole-75d2d2.netlify.app/" />
             </div>
         </div>
     </div>
@@ -29,7 +35,7 @@
   background: #d9d9d9;
   border-radius: 68px;
   width: 605px;
-  height: 600px;
+  height: 1200px;
   margin-right: 50px;
   display: flex;
   justify-content: center;
