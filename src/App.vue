@@ -4,6 +4,7 @@
   <HelloWorld />
   <About />
   <WorkDu/>
+  <Project />
   <Progress />
   <Testimonial />
   <Contact/>
@@ -20,8 +21,9 @@ import WorkDu from './components/Work&edu.vue'
 import Footer from './components/Footer.vue'
 import Testimonial from './components/Testimonial.vue'
 import Progress from './components/ProgressBar.vue'
+import Project from './components/Project.vue'
 export default ({
-  components: { NavBar, HelloWorld, About, Contact, WorkDu, Progress, Testimonial, Footer, }
+  components: { NavBar, HelloWorld, About, Contact, WorkDu, Project, Progress, Testimonial, Footer, }
 })
 </script>
 
