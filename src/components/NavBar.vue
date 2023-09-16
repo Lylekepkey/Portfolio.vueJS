@@ -124,7 +124,7 @@ export default {
         width: 815px;
     }
 }
-@media (min-width: 700px) and (max-width: 919px)  {
+@media (min-width: 605px) and (max-width: 919px)  {
     .navbar {
         width: 950px;
     }
