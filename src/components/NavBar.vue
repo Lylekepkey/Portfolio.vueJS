@@ -6,7 +6,7 @@
         <div class="text">
           <ul class="nav-list">
             <li><router-link :to="{path: '/Home'}"><a @click="">Home</a></router-link></li>
-            <li><router-link :to="{path: '/Resume'}">Resume</router-link></li>
+            <li><router-link :to="{path: '/Resume'}"><a @click="">Resume</a></router-link></li>
           </ul>
         </div>
       </div>
