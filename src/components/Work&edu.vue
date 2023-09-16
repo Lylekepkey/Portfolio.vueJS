@@ -31,6 +31,14 @@
 </template>
 <script>
 export default {
+  computed: {
+    educations() {
+      return this.$store.state.educations;
+    },
+    experiences() {
+      return this.$store.state.experiences;
+    },
+  },
   mounted() {
     document.getElementById("cards").onmousemove = e => {
         for(const card of document.getElementsByClassName("card")) {
@@ -41,7 +49,9 @@ export default {
             card.style.setProperty("--mouse-x", `${x}px`);
             card.style.setProperty("--mouse-y", `${y}px`);
         }
-    }
+    },
+    this.$store.dispatch("fetchEducations");
+    this.$store.dispatch("fetchExperiences");
   }
 };
 
