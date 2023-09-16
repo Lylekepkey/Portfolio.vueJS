@@ -1,30 +1,26 @@
 <template>
     <div class="container" id="exp">
         <div class="contain">
-            <div id="cards">
-                <div class="card card1">
+            <div id="cards" v-if="educations, experiences">
+                <div class="card card1" v-for="education of educations">
                     <div class="card-border"></div>
-                    <div class="card-content">
-                        <h3>Work</h3>
-                        <p>I was an intern at Toyota and Cummins.
-                        I was by Toyota for 2 months, this was in my high
-                        school days. And Cummins for 6 months when I was
-                        in college. 
+                    <div class="card-content" >
+                        <h3>{{ education.name }}</h3>
+                        <p> 
+                          {{ education.description }}
                         </p>
                     </div>
                 </div>
 
-                <div class="card card2">
+                <div class="card card2" v-for="experience of experiences">
                     <div class="card-border"></div>
                     <div class="card-content">
-                        <h3>Education</h3>
-                        <p>Student at Bellville Technical High School (HTS Bellvile).
-                        Studied Auto motive (Engineering) for 3 years. Finished and
-                        went to college at Northlink in Bellville South. Didn't finish
-                        my studies cause of covid😥.
+                        <h3>{{ experience.title }}</h3>
+                        <p>
+                          {{ experience.description }}
                         </p>
                     </div>
-                </div>
+                </div> 
             </div>
         </div>
     </div>
@@ -40,19 +36,20 @@ export default {
     },
   },
   mounted() {
-    document.getElementById("cards").onmousemove = e => {
-        for(const card of document.getElementsByClassName("card")) {
-            const rect = card.getBoundingClientRect(),
-                x = e.clientX - rect.left,
-                y = e.clientY - rect.top;
-
-            card.style.setProperty("--mouse-x", `${x}px`);
-            card.style.setProperty("--mouse-y", `${y}px`);
-        }
-    },
-    this.$store.dispatch("fetchEducations");
-    this.$store.dispatch("fetchExperiences");
-  }
+    
+    // document.getElementById("cards").onmousemove = e => {
+        // for(const card of document.getElementsByClassName("card")) {
+          // const rect = card.getBoundingClientRect(),
+          // x = e.clientX - rect.left,
+                // y = e.clientY - rect.top;
+                // 
+                // card.style.setProperty("--mouse-x", `${x}px`);
+                // card.style.setProperty("--mouse-y", `${y}px`);
+              // };
+            // },
+            this.$store.dispatch("fetchEducations");
+            this.$store.dispatch("fetchExperiences");
+          }
 };
 
 

@@ -16,9 +16,9 @@
             <!-- </div> -->
             <div class="container" id="exp">
         <div class="contain">
-    <div class="card" v-for="project of projects" :key="project.id" :project="project">
+    <div class="card" >
         <div class="card-border"></div>
-        <div class="card-content" >
+        <div class="card-content" v-for="project of projects" :key="project.id" :project="project">
             <div id="text-card" >
             <h3>Project Links</h3>
             <a :href="project.netlify" target="_blank"><p>{{ project.name }}</p></a>
