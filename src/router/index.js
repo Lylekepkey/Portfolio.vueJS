@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
+import VueScrollTo from "vue-scrollto";
 
 const routes = [
   {
@@ -8,15 +9,20 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/src/components/About.vue',
+    path: '/About',
     name: 'About',
     component: () => import(/* webpackChunkName: "about" */ '../components/About.vue')
   },
   {
-    path: '/src/components/Contact.vue',
+    path: '/Contact',
     name: 'Contact',
-    component: () => import(/* webpackChunkName: "about" */ '../components/Contact.vue')
-  }
+    component: () => import('../components/Contact.vue')
+  },
+  {
+    path: '/Resume',
+    name: 'Resume',
+    component: () => import('../views/ResumeView.vue')
+  },
 ]
 
 const router = createRouter({

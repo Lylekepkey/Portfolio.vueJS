@@ -5,10 +5,10 @@
         <img class="logo" src="https://i.postimg.cc/YS5gfXsv/1683206946785-thumbnail.jpg">
         <div class="text">
           <ul class="nav-list">
-            <li><router-link :to="{path: '/#HOME'}"><a>Home</a></router-link></li>
-            <li><router-link :to="{path: '/#ABOUT'}"><a>About</a></router-link></li>
-            <li><router-link :to="{path: '/#Contact'}">Contact</router-link></li>
-            <li><router-link :to="{path: '/#'}">Resume</router-link></li>
+            <li><router-link :to="{path: '/Home'}"><a @click="">Home</a></router-link></li>
+            <li><router-link :to="{path: '/About'}"><a @click="">About</a></router-link></li>
+            <li><router-link :to="{path: '/Contact'}"><a @click="Contact">Contact</a></router-link></li>
+            <li><router-link :to="{path: '/Resume'}">Resume</router-link></li>
           </ul>
         </div>
       </div>
@@ -17,6 +17,8 @@
 </template>
 
 <script>
+import Vue from "vue";
+import VueScrollTo from "vue-scrollto";
 export default {
   data() {
         return {
@@ -33,6 +35,9 @@ export default {
     onScroll() {
         console.log('Scrolling');
         this.isSticky = window.scrollY > 0;
+    },
+    scrollToSection(sectionId){
+        this.$scrollTo(sectionId, 500, {easing:"ease-in"});
     },
 },
 };
