@@ -1,29 +1,17 @@
 <template>
   <NavBar />
   <router-view/>
-  <HelloWorld />
-  <About />
-  <WorkDu/>
-  <Project />
-  <Progress />
-  <Testimonial />
-  <Contact/>
-
-  <Footer />
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue'
-import HelloWorld from './components/HelloWorld.vue'
-import About from './components/About.vue'
 import Contact from './components/Contact.vue'
-import WorkDu from './components/Work&edu.vue'
 import Footer from './components/Footer.vue'
 import Testimonial from './components/Testimonial.vue'
 import Progress from './components/ProgressBar.vue'
 import Project from './components/Project.vue'
 export default ({
-  components: { NavBar, HelloWorld, About, Contact, WorkDu, Project, Progress, Testimonial, Footer, }
+  components: { NavBar, Contact,  Project, Progress, Testimonial, Footer, }
 })
 </script>
 
@@ -38,6 +26,7 @@ export default ({
 * {
   box-sizing: border-box;
   margin: 0;
+  overflow-X: hidden;
   padding: 0;
 }
 body {

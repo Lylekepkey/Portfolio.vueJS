@@ -22,12 +22,12 @@ export default {
 </script>
 
 <style scoped>
-.container {
+.container-11 {
   display: flex;
   justify-content: end;
 }
 
-.contain {
+.contain-11 {
   background: #d9d9d9;
   border-radius: 68px;
   width: 605px;

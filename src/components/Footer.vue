@@ -1,19 +1,21 @@
 <template>
 
     
+    <div class="end">
     <footer id="footer">
-        <div class="container">
-            <div class="text">
-                <p>L.K&copy;</p>                
-                <div class="icons">
-                    <a href="https://www.linkedin.com/in/lyle-kepkey-17b830251/" target="blank"><img src="https://i.postimg.cc/yN8qf0T5/linkedin.png" alt="LinkedIn"></a>
-                    <a href="https://github.com/Lylekepkey" target="blank"><img src="https://i.postimg.cc/3NK2pJhg/github.png" alt="GitHub"></a>
-                    <a href=""><img src="https://i.postimg.cc/SsrhQqGX/whatsapp.png" alt="WhatsApp"></a>
-                    <a href=""><img src="https://i.postimg.cc/8PsmbH99/email.png" alt="Email"></a>
+            <div class="container">
+                <div class="text">
+                    <p>L.K&copy;</p>                
+                    <div class="icons">
+                        <a href="https://www.linkedin.com/in/lyle-kepkey-17b830251/" target="blank"><img src="https://i.postimg.cc/yN8qf0T5/linkedin.png" alt="LinkedIn"></a>
+                        <a href="https://github.com/Lylekepkey" target="blank"><img src="https://i.postimg.cc/3NK2pJhg/github.png" alt="GitHub"></a>
+                        <a href=""><img src="https://i.postimg.cc/SsrhQqGX/whatsapp.png" alt="WhatsApp"></a>
+                        <a href=""><img src="https://i.postimg.cc/8PsmbH99/email.png" alt="Email"></a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </template>
 
 <script>
@@ -29,7 +31,14 @@ img {
  object-fit: contain;
  margin-top: 10px;
 }
+.end{
+    max-width: 1400px;
+    display: flex;
+    justify-content: end;
+}
+
 footer {
+    width: 670px;
     background-color: #d9d9d9;
     margin-top: 50px;
     padding-top: 10px;

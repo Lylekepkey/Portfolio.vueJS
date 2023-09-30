@@ -182,12 +182,79 @@
   </div>
 </div>
 
+<div class="end">
+    <footer id="footer">
+            <div class="container">
+                <div class="text">
+                    <p>L.K&copy;</p>                
+                    <div class="icons">
+                        <a href="https://www.linkedin.com/in/lyle-kepkey-17b830251/" target="blank"><img src="https://i.postimg.cc/yN8qf0T5/linkedin.png" alt="LinkedIn"></a>
+                        <a href="https://github.com/Lylekepkey" target="blank"><img src="https://i.postimg.cc/3NK2pJhg/github.png" alt="GitHub"></a>
+                        <a href=""><img src="https://i.postimg.cc/SsrhQqGX/whatsapp.png" alt="WhatsApp"></a>
+                        <a href=""><img src="https://i.postimg.cc/8PsmbH99/email.png" alt="Email"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
 </template>
 <script>
 
 </script>
 
 <style scoped>
+/* Footer */
+img {
+ height: 40px;
+ aspect-ratio: 5/4;
+ object-fit: contain;
+ margin-top: 10px;
+}
+
+footer {
+    background-color: #d9d9d9;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.container{
+    display:flex;
+    justify-content: center;
+}
+.text {
+    font-size: smaller;
+}
+
+/* Footer Media */
+
+@media (min-width: 315px) and (max-width: 400px) {
+    footer {
+        width: 745px;
+    }
+}
+@media (min-width: 400px) and (max-width: 500px) {
+    footer {
+        width: 745px;
+    }
+}
+@media (min-width: 500px) and (max-width: 606px) {
+    footer {
+        width: 745px;
+    }
+}
+@media (min-width: 700px) and (max-width:900px) {
+    footer {
+        width:950px;
+    }
+}
+@media (min-width: 900px) and (max-width:920px) {
+    footer {
+        width:950px;
+    }
+}
+
+
+/* Footer end */
 
 .bold {
   font-weight: 700;
@@ -204,7 +271,7 @@
   width: 800px;
   height: auto;
   display: flex;
-  margin: 50px auto;
+  margin: 120px auto;
 }
 
 .resume .resume_left {

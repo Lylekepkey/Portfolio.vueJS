@@ -56,7 +56,7 @@ export default {
 </script>
 
 <style scoped>
-.container {
+.container-2 {
   display: flex;
   justify-content: end;
   align-items: center;

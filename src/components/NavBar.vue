@@ -5,7 +5,7 @@
         <img class="logo" src="https://i.postimg.cc/YS5gfXsv/1683206946785-thumbnail.jpg">
         <div class="text">
           <ul class="nav-list">
-            <li><router-link :to="{path: '/Home'}"><a @click="">Home</a></router-link></li>
+            <li><router-link :to="{path: '/'}"><a @click="Home">Home</a></router-link></li>
             <li><router-link :to="{path: '/Resume'}"><a @click="">Resume</a></router-link></li>
           </ul>
         </div>
@@ -50,7 +50,7 @@ export default {
     
     padding: 1rem;
     background-color: var(--_bg);
-    position: sticky;
+    position: fixed;
     top:0;
     z-index: 9999;
 }
@@ -127,6 +127,18 @@ export default {
 @media (min-width: 605px) and (max-width: 919px)  {
     .navbar {
         width: 950px;
+    }
+}
+@media (min-width: 919px) and (max-width: 1311px)  {
+    .navbar {
+        /* max-width: 1500px; */
+        width: 1565px;
+    }
+}
+@media (min-width: 1311px) and (max-width: 1500px)  {
+    .navbar {
+        max-width: 1500px;
+        width: 1400px;
     }
 }
 </style>

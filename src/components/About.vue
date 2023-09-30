@@ -25,7 +25,7 @@ export default {
 .container {
   display: flex;
   justify-content: end;
-  margin-top: 50px;
+  margin-top: -50.0px;
 }
 /* right */
 .lil-description {
