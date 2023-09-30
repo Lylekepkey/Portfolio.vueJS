@@ -1,0 +1,74 @@
+[debug] [2023-09-30T22:40:19.310Z] ----------------------------------------------------------------------
+[debug] [2023-09-30T22:40:19.313Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\lylek\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js hosting:channel:deploy
+[debug] [2023-09-30T22:40:19.314Z] CLI Version:   12.6.1
+[debug] [2023-09-30T22:40:19.314Z] Platform:      win32
+[debug] [2023-09-30T22:40:19.314Z] Node Version:  v17.3.1
+[debug] [2023-09-30T22:40:19.316Z] Time:          Sun Oct 01 2023 00:40:19 GMT+0200 (South Africa Standard Time)
+[debug] [2023-09-30T22:40:19.316Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-30T22:40:19.400Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-30T22:40:19.400Z] > authorizing via signed-in user (lylekepkey@gmail.com)
+[debug] [2023-09-30T22:40:19.400Z] [iam] checking project portvue-c6216 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-09-30T22:40:19.402Z] > refreshing access token with scopes: []
+[debug] [2023-09-30T22:40:19.404Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-09-30T22:40:19.404Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-09-30T22:40:20.010Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2023-09-30T22:40:20.011Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-09-30T22:40:20.012Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/portvue-c6216:testIamPermissions [none]
+[debug] [2023-09-30T22:40:20.012Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/portvue-c6216:testIamPermissions x-goog-quota-user=projects/portvue-c6216
+[debug] [2023-09-30T22:40:20.012Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portvue-c6216:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-09-30T22:40:22.073Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/portvue-c6216:testIamPermissions 401
+[debug] [2023-09-30T22:40:22.074Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portvue-c6216:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2023-09-30T22:40:22.076Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2023-09-30T22:40:22.077Z] > refreshing access token with scopes: []
+[debug] [2023-09-30T22:40:22.078Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-09-30T22:40:22.078Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-09-30T22:40:22.558Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2023-09-30T22:40:22.558Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-09-30T22:40:22.560Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portvue-c6216 [none]
+[debug] [2023-09-30T22:40:23.017Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portvue-c6216 401
+[debug] [2023-09-30T22:40:23.018Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portvue-c6216 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2023-09-30T22:40:23.018Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2023-09-30T22:40:23.515Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (C:\Users\lylek\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\lylek\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project portvue-c6216. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-09-30T22:43:05.099Z] ----------------------------------------------------------------------
+[debug] [2023-09-30T22:43:05.101Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\lylek\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting -m Deploying the best new feature ever.
+[debug] [2023-09-30T22:43:05.101Z] CLI Version:   12.6.1
+[debug] [2023-09-30T22:43:05.101Z] Platform:      win32
+[debug] [2023-09-30T22:43:05.102Z] Node Version:  v17.3.1
+[debug] [2023-09-30T22:43:05.103Z] Time:          Sun Oct 01 2023 00:43:05 GMT+0200 (South Africa Standard Time)
+[debug] [2023-09-30T22:43:05.103Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-30T22:43:05.177Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-30T22:43:05.178Z] > authorizing via signed-in user (lylekepkey@gmail.com)
+[debug] [2023-09-30T22:43:05.178Z] [iam] checking project portvue-c6216 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-09-30T22:43:05.179Z] > refreshing access token with scopes: []
+[debug] [2023-09-30T22:43:05.181Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-09-30T22:43:05.181Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-09-30T22:43:05.803Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2023-09-30T22:43:05.804Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-09-30T22:43:05.804Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/portvue-c6216:testIamPermissions [none]
+[debug] [2023-09-30T22:43:05.805Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/portvue-c6216:testIamPermissions x-goog-quota-user=projects/portvue-c6216
+[debug] [2023-09-30T22:43:05.805Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portvue-c6216:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-09-30T22:43:07.624Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/portvue-c6216:testIamPermissions 401
+[debug] [2023-09-30T22:43:07.624Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portvue-c6216:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2023-09-30T22:43:07.627Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2023-09-30T22:43:07.628Z] > refreshing access token with scopes: []
+[debug] [2023-09-30T22:43:07.629Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-09-30T22:43:07.629Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-09-30T22:43:08.088Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2023-09-30T22:43:08.088Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-09-30T22:43:08.090Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portvue-c6216 [none]
+[debug] [2023-09-30T22:43:08.563Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portvue-c6216 401
+[debug] [2023-09-30T22:43:08.563Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portvue-c6216 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2023-09-30T22:43:08.564Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2023-09-30T22:43:09.027Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (C:\Users\lylek\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\lylek\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project portvue-c6216. Please make sure the project exists and your account has permission to access it.
